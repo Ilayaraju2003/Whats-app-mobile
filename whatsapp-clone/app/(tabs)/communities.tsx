@@ -5,6 +5,7 @@ export default function CommunitiesScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.logo}>Community pages</Text>
+      <Text style={styles.logo}>New pages</Text>
     </View>
   );
 }
