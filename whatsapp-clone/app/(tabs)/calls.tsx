@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from "react-native";
 export default function CallsScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.logo}>Calls</Text>
+      <Text style={styles.logo}>Calls pages</Text>
     </View>
   );
 }
