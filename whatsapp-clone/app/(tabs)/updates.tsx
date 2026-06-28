@@ -4,6 +4,8 @@ import {View,Text,FlatList,StyleSheet,TouchableOpacity,} from "react-native";
 
 import { Ionicons } from "@expo/vector-icons";
 
+import { openCamera } from "@/components/CameraButton";
+
 const statuses = [
     { id: "1", name: "Raju", time: "Today at 11:11 AM" },
     { id: "2", name: "Gokul", time: "Today at 11:51 AM" },
@@ -128,13 +130,14 @@ export default function UpdatesScreen() {
                 />
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.cameraFab}>
+            <TouchableOpacity onPress={openCamera} style={styles.cameraFab}>
                 <Ionicons
                     name="camera-outline"
                     size={28}
                     color="#fff"
                 />
             </TouchableOpacity>
+
         </View>
     );
 }
